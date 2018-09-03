@@ -1,6 +1,7 @@
 
  document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#requestPermissionButton').addEventListener('click', requestPermission);
+    document.querySelector('#deleteTokenButton').addEventListener('click', deleteToken);
   });
 
 var config = {
