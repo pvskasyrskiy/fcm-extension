@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "name": "Test FCM",
+  "description": "Test FCM",
+  "version": "1.1",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "cookies",
+    "https://ajax.googleapis.com/",
+    "storage",
+    "notifications",
+    "background",
+    "alarms",
+    "identity"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "web_accessible_resources": [
+    "index.html",
+    "restricted.html"
+  ]
+}
